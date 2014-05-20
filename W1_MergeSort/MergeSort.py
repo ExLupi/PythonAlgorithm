@@ -1,22 +1,14 @@
 #!/usr/bin/env python
 
-##################### How to run a script ########################
-# (1) run the code by typing "python xxx.py" in the terminal
-# (2) To make it excutable:
-# chmod 755 thescript.py
-# ./thescript.py
-# (3)To use Ipython shell, type "ipython --pylab", start with ipython  and run with "run xxx.py"
-
-#Be careful: Python is case sensitive - if and while
-# indension matters - how to automatically setup?
-# : after each statement
-##################### Goal: plot, do interpolation, build a new grid #############
+##########################################################################
+# Impliment MergeSort to sort an array in O(nlog n) time
+# Emma Yu May 2014
+##########################################################################
 
 
-#import numpy as np
-#import matplotlib.pyplot as plt
-
-#a = np.loadtxt('IntegerArray.txt')
+import numpy as np
+import matplotlib.pyplot as plt
+a = np.loadtxt('IntegerArray.txt')
 
 def MergeSort(alist):
 

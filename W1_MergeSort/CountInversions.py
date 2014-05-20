@@ -1,17 +1,9 @@
 #!/usr/bin/env python
 
-##################### How to run a script ########################
-# (1) run the code by typing "python xxx.py" in the terminal
-# (2) To make it excutable:
-# chmod 755 thescript.py
-# ./thescript.py
-# (3)To use Ipython shell, type "ipython --pylab", start with ipython  and run with "run xxx.py"
-
-#Be careful: Python is case sensitive - if and while
-# indension matters - how to automatically setup?
-# : after each statement
-##################### Goal: plot, do interpolation, build a new grid #############
-
+##########################################################################
+#Emma Yu May 2014
+#To count the number of inversions in an array by modifying merge sort algorithm
+##########################################################################
 
 import numpy as np
 import matplotlib.pyplot as plt
