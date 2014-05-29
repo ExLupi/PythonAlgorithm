@@ -6,9 +6,9 @@
 ##########################################################################
 
 
-import numpy as np
-import matplotlib.pyplot as plt
-a = np.loadtxt('IntegerArray.txt')
+#import numpy as np
+#import matplotlib.pyplot as plt
+#a = np.loadtxt('IntegerArray.txt')
 
 def MergeSort(alist):
 

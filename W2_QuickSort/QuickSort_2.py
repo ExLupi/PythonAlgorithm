@@ -21,9 +21,11 @@ def QuickSort(alist):
     global ncompare
 
     if len(alist) > 1:
-        pivot = alist[0] #Case 1, alway use the first element as the pivot
-                            #pivot = alist[nlist]  #Case 2
-    
+        pivot = alist[len(alist)-1] #Case 2, alway use the last element as the pivot
+                            
+        alist[len(alist)-1] = alist[0]
+        alist[0] = pivot
+        
         #rearrange, then fed the new arrays to the next level
         i=1
         alist, i = Partition(alist, i)
@@ -81,3 +83,4 @@ print ncompare
 
 #The algorithm works, even though the final alist is not updated correctly ?!
 # (1) 162085
+# (2) 164123

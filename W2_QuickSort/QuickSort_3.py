@@ -21,9 +21,42 @@ def QuickSort(alist):
     global ncompare
 
     if len(alist) > 1:
-        pivot = alist[0] #Case 1, alway use the first element as the pivot
-                            #pivot = alist[nlist]  #Case 2
-    
+        if  (len(alist)//2)*2 == len(alist):
+            pivotm = alist[len(alist)//2-1]
+            mm = len(alist)//2-1
+        else:
+            pivotm = alist[len(alist)//2]
+            mm = len(alist)//2
+        pivotf = alist[0]
+        pivotl = alist[len(alist)-1]  #case 3, choose the middle number amoung the first, last, and middle elements as pivot.
+        
+        # Sort the three possible pivots and find the middle one
+        if (pivotf > pivotl) and (pivotf > pivotm):
+            if pivotl > pivotm:
+                pivot = pivotl
+                alist[len(alist)-1]=alist[0]
+                alist[0] = pivot
+            else:
+                pivot= pivotm
+                alist[mm] = alist[0]
+                alist[0] = pivot
+
+        if (pivotl > pivotm) and (pivotl > pivotf):
+            if pivotm > pivotf:
+                pivot = pivotm
+                alist[mm]=alist[0]
+                alist[0] = pivot
+            else:
+                pivot= pivotf
+
+        if (pivotm > pivotl) and (pivotm > pivotf):
+            if pivotl > pivotf:
+                pivot = pivotl
+                alist[len(alist)-1]=alist[0]
+                alist[0] = pivot
+            else:
+                pivot= pivotf
+        
         #rearrange, then fed the new arrays to the next level
         i=1
         alist, i = Partition(alist, i)
@@ -81,3 +114,4 @@ print ncompare
 
 #The algorithm works, even though the final alist is not updated correctly ?!
 # (1) 162085
+# (2) 164123
