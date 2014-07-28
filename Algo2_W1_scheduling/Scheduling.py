@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
 ##########################################################################
-#Emma Yu May 2014
+# Emma Yu July 2014
+# Solving scheduling problem with greedy algorithms
 ##########################################################################
 
 import numpy as np
