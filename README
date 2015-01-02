@@ -1,12 +1,7 @@
-Note for a Python newbie
+This is a library of problems I coded up while taking the Algorithm design and analysis (I and II) classes on Coursera.
+I've learned a lot in those two classes, and I truely enjoyed my experience learning those algorithms. 
+The code is written in Python.
 
-##################### How to run a script ########################
-# (1) run the code by typing "python xxx.py" in the terminal
-# (2) To make it excutable:
-# chmod 755 thescript.py
-# ./thescript.py
-# (3)To use Ipython shell, type "ipython --pylab", start with ipython  and run with "run xxx.py"
+Emma Yu
 
-#Be careful: Python is case sensitive - if and while
-# indension matters - how to automatically setup?
-# : after each statement
+### List of problems
